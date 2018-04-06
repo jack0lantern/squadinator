@@ -1,15 +1,15 @@
 {
   "manifest_version": 2,
 
-  "name": "comic",
-  "description": "This extension displays everything you care about in the only font that matters - Comic Sans!",
+  "name": "squadinator",
+  "description": "Need to create a surprise party? Organizing a special event? The squadinator allows you to create new squads out of your own squads, easy as 1,2,3 (and a bit more)",
   "version": "0.0.0.0",
   
   "content_scripts": [
     {
       "matches": ["*://*/*"],
-      "css": ["comic.css"],
-      "js": ["jQuery1x10x2.js", "comic.js"],
+      "css": ["squadinator.css"],
+      "js": ["jQuery1x10x2.js", "squadinator.js"],
 	  "run_at": "document_end"
     }
   ],
@@ -22,7 +22,7 @@
   "browser_action": {
     "default_icon": "icon.png",
     "default_popup": "popup.html",
-	"default_title": "Toggle Comic"
+	"default_title": "Squadinator"
   },
   "permissions": [
     "activeTab",
