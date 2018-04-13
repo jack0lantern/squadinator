@@ -9,7 +9,7 @@
     {
       "matches": ["*://*/*"],
       "css": ["squadinator.css"],
-      "js": ["jQuery1x10x2.js", "squadinator.js"],
+      "js": ["jquery-3.3.1.min.js", "squadinator.js"],
 	  "run_at": "document_end"
     }
   ],

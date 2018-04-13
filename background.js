@@ -1,5 +1,11 @@
 // background.js
 // does stuff with chrome itself
+
+
+
+
+// Code from the extension tutorial here. Not useful, except for reference.
+
 // Called when the user clicks on the browser action.
 chrome.browserAction.onClicked.addListener(function(tab) {
   // Send a message to the active tab
