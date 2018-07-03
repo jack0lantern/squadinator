@@ -19,7 +19,7 @@
     "method-override": "^2.0.2"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node app.js"
   },
   "keywords": [
     "Ionic",

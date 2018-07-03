@@ -2,6 +2,8 @@ var express = require('express'),
     bodyParser      = require('body-parser'),
     methodOverride  = require('method-override'),
     sessions        = require('./routes/sessions'),
+    messenger		= require('./routes/messenger'),
+    path = require('path');
     app = express();
 
 app.use(bodyParser.json());
@@ -16,6 +18,12 @@ app.all('*', function(req, res, next) {
     res.header("Access-Control-Allow-Headers", "X-Requested-With");
     next();
 });
+
+app.get('/', messenger.sendMessage);
+
+app.get('/test/', function(req, res, next) {
+	res.sendFile(path.join(__dirname, 'public/index.html'))
+})
 
 app.get('/sessions', sessions.findAll);
 app.get('/sessions/:id', sessions.findById);
